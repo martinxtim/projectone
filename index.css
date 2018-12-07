@@ -1,6 +1,10 @@
+html {
+	height: 100%;
+}
+
 body{
 	/* https://www.pexels.com/search/website%20background/ */
-	background-image: url("background.jpg");
+	/*background-image: url("background.jpg");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
@@ -11,40 +15,50 @@ body{
     color: #212529;
     text-align: left;
     background-color: #fff;
-}
+    min-height: 100%;
+	position: relative;
+	padding-bottom: 6rem;
 
-footer{
-	background: linear-gradient(rgba(158,184,217,.1), white);
-	height: 50%;
-	float: bottom;
-	overflow-y: scroll;
-	opacity: .5;
-	display: block;
-}
-header{
-	height: 50%;
 }
 
 .sections{
-
+	padding: 50px;
+	margin: 50px;
 }
 
-#scetionOne{
-	padding-top: 20%;
+.rounded{
+	/*-webkit-transform: translate(-50%, -50%);*/
+	overflow-y: scroll;
+	position: inherit;
+    top: 50%;
+    left: 50%;
+    max-height: 200px;
+   /* position: fixed;*/
 }
 
-#scetionFive{
-	padding-bottom: 10%;
+#bd-sidebar{
+	overflow-y: scroll;
+	height: 660px;
 }
 
-#corner{
-	text-align: left;
+.wrapper {
+	margin: 10px 60px 20px;
 }
 
-.fixed-bottom {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1030;
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #efefef;
+	text-align: center;
 }
