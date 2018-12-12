@@ -25,3 +25,13 @@ li a:hover:not(.active) {
 .active {
 	background-color: #4CAF50;
 }
+
+#navbar {
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
