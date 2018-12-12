@@ -21,6 +21,10 @@ body {
 
 }
 
+main {
+	padding-top: 6rem;
+}
+
 .sections{
 	padding: 50px;
 	margin: 50px;
