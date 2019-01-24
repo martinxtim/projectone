@@ -53,39 +53,8 @@
 		</main>
 		<footer>
 			<p>This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</p>
-
-<!-- Testing Sticky Nav functionality Begin -->
-			<!-- <script type="text/javascript">
-				window.onscroll = function() {myFunction()};
-				var navbar = document.getElementById("navbar");
-				var sticky = navbar.offsetTop;
-				function myFunction() {
-				  if (window.pageYOffset >= sticky) {
-				    navbar.classList.add("sticky")
-				  } else {
-				    navbar.classList.remove("sticky");
-				  }
-				}
-			</script> -->
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-			<script>
-				$(document).scroll(function() {
-					var scrollPosition = $(window).scrollTop();
-					var mainheader = $('#js-main-header');
-					if (scrollPosition > 155) {
-						$('#navbar').addClass('sticky');
-						$('main').addClass('extra-margin');
-					}
-					else{
-						$('#navbar').removeClass('sticky');
-						$('main').removeClass('extra-margin');
-					}	
-				});
-			</script>
-
-
-<!-- Testing Sticky Nav functionality End -->
-
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+		<script src="/scripts.js"></script>
 	</body>
 </html>
