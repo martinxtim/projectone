@@ -9,13 +9,9 @@ $(document).scroll(function() {
    }	
 });
 
-// set cookie
-function setAgreeCookie() {
-    var expire=new Date();
-    expire=new Date(expire.getTime()+7776000000);
-    document.cookie="test=here; expires="+expire;
-}
 
+
+// checks to see if cookie exists on page load. If it DNE we will show banner, hide if it does exist
 $(document).ready(function() {
     var visit=GetCookie("test");
     if (visit==null){
@@ -27,6 +23,14 @@ $(document).ready(function() {
 
 });
 
+// sets cookie
+function setAgreeCookie() {
+    var expire=new Date();
+    expire=new Date(expire.getTime()+7776000000);
+    document.cookie="test=here; expires="+expire;
+}
+
+// function used to test if our cookie exists for the user
 function GetCookie(name) {
     var arg=name+"=";
     var arglen=arg.length;
@@ -44,7 +48,7 @@ function GetCookie(name) {
     return null;
 }
 
-// 
+// used in document ready function to display the banner
 function cookiebar() {
     $('#cookiebar').addClass('display');
 }
