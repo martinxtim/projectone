@@ -1,0 +1,117 @@
+#cookiebar {
+	display: none;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999999;
+}
+
+    #cookiebar-inner {
+		background-color: white;
+		border-bottom: 2px solid #ccc;
+		left: 0;
+		margin: auto;
+		min-height: 90px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+		/* opacity */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; /* IE 8 */
+		filter: alpha(opacity=90); /* IE 5-7 */
+		-moz-opacity: 0.9; /* Netscape */
+		-khtml-opacity: 0.9; /* Safari 1.x */
+		opacity: 0.9;
+    }
+	
+	
+#cookiebar.display {
+  display: block;
+
+  /* Cross browser animation */
+  -webkit-animation: cookiebar 1s 1; /* Chrome, Safari 5+ */
+     -moz-animation: cookiebar 1s 1; /* Firefox 5-15 */
+      -ms-animation: cookiebar 1s 1; /* IE9 */
+       -o-animation: cookiebar 1s 1; /* Opera 12.00 */
+          animation: cookiebar 1s 1; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+@keyframes cookiebar {
+  0%   {
+    -webkit-transform: translate3d(0,-100px,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,-100px,0); /* Firefox */
+        -ms-transform: translate3d(0,-100px,0); /* IE9 */
+         -o-transform: translate3d(0,-100px,0); /* Opera */
+            transform: translate3d(0,-100px,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,0,0); /* Firefox */
+        -ms-transform: translate3d(0,0,0); /* IE9 */
+         -o-transform: translate3d(0,0,0); /* Opera */
+            transform: translate3d(0,0,0);
+  }
+}
+@-webkit-keyframes cookiebar {
+  0%   {
+    -webkit-transform: translate3d(0,-100px,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,-100px,0); /* Firefox */
+        -ms-transform: translate3d(0,-100px,0); /* IE9 */
+         -o-transform: translate3d(0,-100px,0); /* Opera */
+            transform: translate3d(0,-100px,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,0,0); /* Firefox */
+        -ms-transform: translate3d(0,0,0); /* IE9 */
+         -o-transform: translate3d(0,0,0); /* Opera */
+            transform: translate3d(0,0,0);
+  }
+}
+@-moz-keyframes cookiebar {
+  0%   {
+    -webkit-transform: translate3d(0,-100px,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,-100px,0); /* Firefox */
+        -ms-transform: translate3d(0,-100px,0); /* IE9 */
+         -o-transform: translate3d(0,-100px,0); /* Opera */
+            transform: translate3d(0,-100px,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,0,0); /* Firefox */
+        -ms-transform: translate3d(0,0,0); /* IE9 */
+         -o-transform: translate3d(0,0,0); /* Opera */
+            transform: translate3d(0,0,0);
+  }
+}
+@-o-keyframes cookiebar {
+  0%   {
+    -webkit-transform: translate3d(0,-100px,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,-100px,0); /* Firefox */
+        -ms-transform: translate3d(0,-100px,0); /* IE9 */
+         -o-transform: translate3d(0,-100px,0); /* Opera */
+            transform: translate3d(0,-100px,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0); /* Safari & Chrome */
+       -moz-transform: translate3d(0,0,0); /* Firefox */
+        -ms-transform: translate3d(0,0,0); /* IE9 */
+         -o-transform: translate3d(0,0,0); /* Opera */
+            transform: translate3d(0,0,0);
+  }
+}
+
+.close-cookies {
+  -webkit-transition: all 0.8s ease-out;
+     -moz-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+       -o-transition: all 0.8s ease-out;
+          transition: all 0.8s ease-out;
+  
+  -webkit-transform: translate3d(0,-100px,0); /* Safari & Chrome */
+     -moz-transform: translate3d(0,-100px,0); /* Firefox */
+      -ms-transform: translate3d(0,-100px,0); /* IE9 */
+       -o-transform: translate3d(0,-100px,0); /* Opera */
+          transform: translate3d(0,-100px,0);
+}
