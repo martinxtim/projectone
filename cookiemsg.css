@@ -8,7 +8,7 @@
 }
 
     #cookiebar-inner {
-		background-color: white;
+		background-color: #333;
 		border-bottom: 2px solid #ccc;
 		left: 0;
 		margin: auto;
@@ -17,15 +17,12 @@
 		text-align: center;
 		bottom: 0;
 		width: 100%;
-		/* opacity */
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; /* IE 8 */
-		filter: alpha(opacity=90); /* IE 5-7 */
-		-moz-opacity: 0.9; /* Netscape */
-		-khtml-opacity: 0.9; /* Safari 1.x */
-		opacity: 0.9;
     }
 	
-	
+#cookiebar-inner > p {
+	color: white;
+}
+
 #cookiebar.display {
   display: block;
 
