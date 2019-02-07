@@ -93,14 +93,7 @@
   }
 }
 
-.close-cookies {
-  padding: 0;
-  border: none;
-  outline: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-	
+.close-cookies {	
   -webkit-transition: all 0.8s ease-out;
      -moz-transition: all 0.8s ease-out;
       -ms-transition: all 0.8s ease-out;
@@ -112,4 +105,13 @@
       -ms-transform: translate3d(0,-100px,0); /* IE9 */
        -o-transform: translate3d(0,-100px,0); /* Opera */
           transform: translate3d(0,-100px,0);
+}
+
+#close-cookies {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
 }
