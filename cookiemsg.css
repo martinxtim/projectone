@@ -1,18 +1,6 @@
-#cookiebar {
-	display: none;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 999999;
-}
-
 #cookiebar-inner {
 	background-color: #333;
-	border-bottom: 2px solid #ccc;
-	left: 0;
 	margin: auto;
-	min-height: 90px;
 	position: fixed;
 	text-align: center;
 	bottom: 0;
