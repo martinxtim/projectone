@@ -7,23 +7,14 @@
 	z-index: 999999;
 }
 
-    #cookiebar-inner {
-		background-color: white;
-		border-bottom: 2px solid #ccc;
-		left: 0;
-		margin: auto;
-		min-height: 90px;
-		position: absolute;
-		text-align: center;
-		top: 0;
-		width: 100%;
-		/* opacity */
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; /* IE 8 */
-		filter: alpha(opacity=90); /* IE 5-7 */
-		-moz-opacity: 0.9; /* Netscape */
-		-khtml-opacity: 0.9; /* Safari 1.x */
-		opacity: 0.9;
-    }
+#cookiebar-inner {
+	background-color: #333;
+	margin: auto;
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
 	
 	
 #cookiebar.display {
